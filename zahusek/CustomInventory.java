@@ -14,8 +14,8 @@ public class CustomInventory implements Listener {
 	
 	public static ArrayList<CreateInventory> list = new ArrayList<CreateInventory>(); 
 	
-    public CustomInventory() {
-        Bukkit.getPluginManager().registerEvents(this, Bukkit.getPluginManager().getPlugins()[0]);
+    public CustomInventory(Plugin p) {
+        Bukkit.getPluginManager().registerEvents(this, p);
     }
     
     public static class CreateInventory {
